@@ -20,7 +20,7 @@ class String
       puts i
       letter = self.split[i]
       puts letter
-      if letter.include? "!" || "?" || "."
+      if letter.include? "!" || letter.include? "?" || letter.include? "."
           count += 1
       end
     end
