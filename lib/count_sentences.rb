@@ -21,7 +21,7 @@ class String
       letter = self.split[i]
       p_letter = self.split[i - 1]
       puts letter
-      if letter == "!" || letter == "." || letter == "?"
+      if letter == "!" || letter == "." || letter == "?" && p_letter != "!" || p_letter != "." || p_letter != "?"
           count += 1
       end
     end
