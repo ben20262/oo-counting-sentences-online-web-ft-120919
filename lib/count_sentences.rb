@@ -16,12 +16,12 @@ class String
 
   def count_sentences
     count = 0
-    self.split(%r{\s*}).each_index do |i|
+    self.split.each_index do |i|
       puts i
       letter = self.split[i]
       p_letter = self.split[i - 1]
       puts letter
-      if letter == "!" || letter == "." || letter == "?" && p_letter != "!" || p_letter != "." || p_letter != "?"
+      if letter == "!" || letter == "." || letter == "?"
           count += 1
       end
     end
