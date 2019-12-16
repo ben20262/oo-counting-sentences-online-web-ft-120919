@@ -16,7 +16,7 @@ class String
 
   def count_sentences
     count = 0
-    self.split.each_index do |i|
+    self.split.flatten.each_index do |i|
       puts i
       letter = self.split[i]
       p_letter = self.split[i - 1]
