@@ -19,9 +19,8 @@ class String
     self.split.each_index do |i|
       puts i
       letter = self.split[i]
-      p_letter = self.split[i - 1]
       puts letter
-      if letter == "!" || letter == "." || letter == "?" && p_letter != "!" || p_letter != "." || p_letter != "?"
+      if letter.include? "!" || "?" || "."
           count += 1
       end
     end
