@@ -21,10 +21,8 @@ class String
       p_letter = self[i - 1]
       puts "Letter is #{letter}"
       puts "P is #{p_letter}"
-      if letter == "!" || letter == "." || letter == "?"
-        if p_letter != "!" && p_letter != "." && p_letter != "?"
+      if letter == "!" || letter == "." || letter == "?" && p_letter != "!" || p_letter != "." || p_letter != "?"
           count += 1
-        end
       end
     end
     count
