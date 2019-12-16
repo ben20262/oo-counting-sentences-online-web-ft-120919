@@ -19,7 +19,8 @@ class String
     self.split.each_index do |i|
       letter = self[i]
       p_letter = self[i - 1]
-      puts p_letter, letter
+      puts "Letter is #{letter}"
+      puts "P is #{p_letter}"
       if letter == "!" || letter == "." || letter == "?"
         if p_letter != "!" && p_letter != "." && p_letter != "?"
           count += 1
